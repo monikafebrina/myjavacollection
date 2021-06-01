@@ -61,4 +61,4 @@ public class Mahasiswa
     {
         this.alamat = alamat;
      }
-}
+    }
