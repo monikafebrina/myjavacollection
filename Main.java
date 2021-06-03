@@ -71,7 +71,52 @@ public class Main
                 System.out.println("Umur : "+mhs.getumurMhs());
             }
         }
+        System.out.println("\nUpdate Data Mahasiswa");
+        System.out.print("Cari NIM: ");
+        cariNim = input.nextInt();
+        for(Mahasiswa mhs: arrm)
+        {
+        if (mhs.getnimMhs() == cariNim)
+        {
+        System.out.print("Set Nama = ");    
+        nama = input.next();
+        mhs.setnamaMhs(nama);
+        }
+        }
+         
+        System.out.println("\nData Mahasiswa Setelah di Update");
+        for(Mahasiswa mhs:arrm)
+        {
+            System.out.println("NIM = "+ mhs.getnimMhs());
+            System.out.println("Nama = "+mhs.getnamaMhs());
+            System.out.println("Alamat = "+mhs.getalamatMhs());
+            System.out.println("Kelas : "+mhs.getkelasMhs());
+            System.out.println("Umur : "+mhs.getumurMhs());
+        }
         
+        System.out.println("\nRemove Data Mahasiswa");
+        System.out.print("Masukkan NIM = ");
+        cariNim = input.nextInt();
+        for(Mahasiswa mhs:arrm)
+        {
+        if (mhs.getnimMhs() == cariNim)
+        {
+        arrm.indexOf(mhs);
+        arrm.remove(arrm.indexOf(mhs));
+        break;
+        }
+        }
+        
+        System.out.println("\nData Mahasiswa Setelah di Hapus");
+        for(Mahasiswa mhs:arrm)
+        {
+            System.out.println("NIM = "+ mhs.getnimMhs());
+            System.out.println("Nama = "+mhs.getnamaMhs());
+            System.out.println("Alamat = "+mhs.getalamatMhs());
+            System.out.println("Kelas : "+mhs.getkelasMhs());
+            System.out.println("Umur : "+mhs.getumurMhs());
+            System.out.println("---------------------");
+        }
         
         
         /*System.out.println("Menampilkan Data Mahasiswa");
