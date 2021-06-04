@@ -54,7 +54,31 @@ public class Main
             System.out.println("Umur : "+mhs.getumurMhs());
             System.out.println("---------------------");
         }
+          //Menampilkan Hasil Input Dengan di Sorting
+        Collections.sort(arrm,new MahasiswaComparatorString());
+        System.out.println("Menampilkan Data Mahasiswa Sesuai urutan String(Kelas)");
+        for (Mahasiswa mhs: arrm)
+        {
+            System.out.println("Nim : "+mhs.getnimMhs());
+            System.out.println("Nama : "+mhs.getnamaMhs());
+            System.out.println("Alamat : "+mhs.getalamatMhs());
+            System.out.println("Kelas : "+mhs.getkelasMhs());
+            System.out.println("Umur : "+mhs.getumurMhs());
+            System.out.println("---------------------");
+        }
         
+         //Menampilkan Hasil Input Dengan di Sorting
+        Collections.sort(arrm,new MahasiswaComparator());
+        System.out.println("Menampilkan Data Mahasiswa Sesuai urutan Integer(Umur)");
+        for (Mahasiswa mhs: arrm)
+        {
+            System.out.println("Nim : "+mhs.getnimMhs());
+            System.out.println("Nama : "+mhs.getnamaMhs());
+            System.out.println("Alamat : "+mhs.getalamatMhs());
+            System.out.println("Kelas : "+mhs.getkelasMhs());
+            System.out.println("Umur : "+mhs.getumurMhs());
+            System.out.println("---------------------");
+        }
         //Mencari data Mahasiswa
         System.out.println("\nSearch Data Mahasiswa");
         int cariNim;
